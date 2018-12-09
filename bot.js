@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "your prefix here";
+const prefix = "1";
 /////////////////////////
 ////////////////////////
 
@@ -313,7 +313,7 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === 'help') {
+    if (message.content === '1help') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
         .setDescription('**برفكس البوت (!)**')
@@ -331,7 +331,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === 'general_commands') {
+    if (message.content === '1general_commands') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر عامة...**')
         .addField('avatar', "افاتار الشخص المطلوب")
@@ -344,12 +344,12 @@ client.on('message', message => {
 
 client.on('ready', () => {
    console.log(`----------------`);
-      console.log(`Music Bot- Script By : CF Na World Clan`);
+      console.log(`Music Bot- Script By : SAJED`);
         console.log(`----------------`);
-      console.log(`ON ${client.guilds.size} Servers '     Script By : CF Na World Clan ' `);
+      console.log(`ON ${client.guilds.size} Servers '     Script By :SAJED ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Toxic Codes Team`,"http://twitch.tv/Toxic Codes")
+client.user.setGame(`1help`,"http://twitch.tv/Toxic Codes")
 client.user.setStatus("dnd")
 });
 
